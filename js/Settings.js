@@ -6,6 +6,8 @@ class Settings{
         this.musicDisplayButton = createCheckbox('Música', true)
         this.effectSoundsDisplayButton = createCheckbox("Efeitos Sonoros", true)
 
+        this.creditsDisplayButton = createButton("Créditos")
+
         this.backHomeScreenButton = createButton("Voltar")
 
         this.homeScreenPage = null
@@ -52,6 +54,7 @@ class Settings{
         this.backHomeScreenButton.hide();
         this.musicDisplayButton.hide();
         this.effectSoundsDisplayButton.hide();
+        this.creditsDisplayButton.hide();
     }
 
     display(){

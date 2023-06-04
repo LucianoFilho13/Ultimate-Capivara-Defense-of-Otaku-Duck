@@ -5,7 +5,7 @@ class ShopScreen {
 
         this.towerBasic = null
 
-        this.capivaraBaseButton = createButton("Capivara Base")
+        this.capivaraBaseButton = createButton("Capivara Básica")
         //this.settingsButton = createButton("Configurações")
         //this.soundButton = soundClicked
         
