@@ -1,9 +1,10 @@
 class HomeScreen {
     constructor(){
         this.titleGame = createElement("h1")
-        this.titleGame.html("Super Tower Defense")
+        this.titleGame.html("Ultimate Capivara Defense of Otaku Duck")
 
         this.settingsPage = null
+        this.shopPage = null
 
         this.playButton = createButton("Jogar")
         this.settingsButton = createButton("Configurações")
@@ -24,6 +25,7 @@ class HomeScreen {
         this.playButton.mousePressed(() => {
             soundClicked.play()
             this.hide();
+            this.shopPage = new ShopScreen()
         })
 
         this.settingsButton.mousePressed(() => {

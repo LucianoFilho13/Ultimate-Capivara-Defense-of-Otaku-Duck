@@ -8,7 +8,7 @@ var mouseObject;
 var varTowerState;
 
 function preload(){ // Carregar imagens, gifs, sons/musica e videos
-  soundClicked = loadSound('./assets/soundClicked.mp3');
+  soundClicked = loadSound('./assets/sounds/soundClicked.mp3');
 }
 
 function setup(){ // Setar valores iniciais
@@ -17,7 +17,7 @@ function setup(){ // Setar valores iniciais
   mouseObject = createSprite(mouseX, mouseY, 10,10)
 
   towerClass = new TowerBasic()
-  shopScreen = new ShopScreen()
+  //shopScreen = new ShopScreen()
   homeScreen = new HomeScreen()
 
   inventory = []

@@ -50,38 +50,39 @@ class TowerBasic {
     }
 
     nvState(){
-        switch(this.nvTower){
-            case 1:
-                this.towerPrice = 100
-                this.towerDamage  = 1
-                this.towerRange = 5
-                this.cooldownTower = 3
-            break;
+        if (this.classTower === "capivara_basica"){
+            switch(this.nvTower){
+                case 1:
+                    this.towerPrice = 100
+                    this.towerDamage  = 1
+                    this.towerRange = 5
+                    this.cooldownTower = 3
+                break;
 
-            case 2:
-                this.towerPrice = 210
-                this.towerDamage  = 2
-                this.towerRange = 5
-                this.cooldownTower = 3
-            break;
+                case 2:
+                    this.towerPrice = 210
+                    this.towerDamage  = 2
+                    this.towerRange = 5
+                    this.cooldownTower = 3
+                break;
 
-            case 3:
-                this.towerPrice = 505
-                this.towerDamage  = 3
-                this.towerRange = 6
-                this.cooldownTower = 3
-                this.nameTower = 'Capivara Treinada'
-            break;
+                case 3:
+                    this.towerPrice = 505
+                    this.towerDamage  = 3
+                    this.towerRange = 6
+                    this.cooldownTower = 3
+                    this.nameTower = 'Capivara Treinada'
+                break;
 
-            case 4:
-                this.towerPrice = 610
-                this.towerDamage  = 5
-                this.towerRange = 6
-                this.cooldownTower = 2
-                this.nameTower = 'Capivara Treinada'
-            break;
+                case 4:
+                    this.towerPrice = 610
+                    this.towerDamage  = 5
+                    this.towerRange = 6
+                    this.cooldownTower = 2
+                    this.nameTower = 'Capivara Treinada'
+                break;
+            }
         }
-
     }
 
     rangeState(){

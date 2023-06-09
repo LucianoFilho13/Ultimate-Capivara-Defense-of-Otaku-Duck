@@ -6,12 +6,14 @@ class ShopScreen {
         this.towerBasic = null
 
         this.capivaraBaseButton = createButton("Capivara Básica")
+        this.capivaraAvancadaButton = createButton("Capivara Avancada")
         //this.settingsButton = createButton("Configurações")
         //this.soundButton = soundClicked
         
 
         this.setElementsPosition();
-        this.handleMousePressed()
+        this.setElementsStyle();
+        this.handleMousePressed();
         this.display();
     }
 
@@ -33,7 +35,15 @@ class ShopScreen {
     }
 
     setElementsPosition(){
-        this.capivaraBaseButton.position(0,0)
+        this.titleShop.position(50, 30)
+        this.capivaraBaseButton.position(50, 120)
+        this.capivaraAvancadaButton.position(50, 140)
+    }
+
+    setElementsStyle(){
+        this.titleShop.class("shopScreen titleShop")
+        this.capivaraBaseButton.class("shopScreen")
+        this.capivaraAvancadaButton.class("shopScreen")
     }
 
     // setTowerPosition(){
