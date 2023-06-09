@@ -33,7 +33,7 @@ function draw(){ // Aparecer as informações na tela
   mouseObject.y = mouseY
 
   this.homeScreen.display()
-  this.shopScreen.display()
+  // this.shopScreen.display()
   this.towerClass.display()
   // this.towerBasic.display()
 

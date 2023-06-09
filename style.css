@@ -5,12 +5,17 @@
 html, body {
   height: 100%;
 }
-canvas {
-  display: block;
-}
+
 
 .titleShop {
-  position: -200;
+  background: blue;
+  padding-right: 700px;
+}
+
+.capivaraBuyBtn {
+  background: blue;
+  padding-right: 300px;
+  font-size: 15px;
 }
 
 .shopScreen {

@@ -42,8 +42,8 @@ class ShopScreen {
 
     setElementsStyle(){
         this.titleShop.class("shopScreen titleShop")
-        this.capivaraBaseButton.class("shopScreen")
-        this.capivaraAvancadaButton.class("shopScreen")
+        this.capivaraBaseButton.class("shopScreen capivaraBuyBtn")
+        this.capivaraAvancadaButton.class("shopScreen capivaraBuyBtn")
     }
 
     // setTowerPosition(){
