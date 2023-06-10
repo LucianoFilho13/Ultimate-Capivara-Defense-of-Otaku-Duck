@@ -47,10 +47,13 @@ function draw(){ // Aparecer as informações na tela
 //Funções
 function allFunction(){
   //Insira as funções aqui
-  function function1(){
+  function keyTyped(){
+    if (keyCode === 27){
+      this.settingsScreen = new Settings()
+    }
     
   }
 
   //Chamar Funções
-  function1();
+  keyTyped();
 }

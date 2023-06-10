@@ -4,9 +4,12 @@ class ShopScreen {
         this.titleShop.html("Loja")
 
         this.towerBasic = null
+        this.selectTower =  null
 
         this.capivaraBaseButton = createButton("Capivara Básica")
         this.capivaraAvancadaButton = createButton("Capivara Avancada")
+
+        this.closeButton = createButton("Fechar")
         //this.settingsButton = createButton("Configurações")
         //this.soundButton = soundClicked
         
@@ -22,13 +25,19 @@ class ShopScreen {
             //soundClicked.play()
             this.buyTower()
         })
+        this.closeButton.mousePressed(() => {
+            this.hide()
+        })
     }
 
     buyTower(){
         if (moneyGame >= 100){
             this.towerBasic = new TowerBasic("capivara_basica")
+            this.towerBasic.towerSprite.x = mouseObject.x
+            this.towerBasic.towerSprite.y = mouseObject.y
             this.towerBasic.towerState = "Colocando"
             this.towerBasic.display()
+            // this.hide()
             moneyGame -= this.towerBasic.towerPrice
             
         }
@@ -38,18 +47,22 @@ class ShopScreen {
         this.titleShop.position(50, 30)
         this.capivaraBaseButton.position(50, 120)
         this.capivaraAvancadaButton.position(50, 140)
+        this.closeButton.position(50, 550)
     }
 
     setElementsStyle(){
         this.titleShop.class("shopScreen titleShop")
         this.capivaraBaseButton.class("shopScreen capivaraBuyBtn")
         this.capivaraAvancadaButton.class("shopScreen capivaraBuyBtn")
+        this.closeButton.class("shopScreen closeShopButton")
     }
 
-    // setTowerPosition(){
-    //     this.towerBasic.towerSprite.x = mouseObject.x
-    //     this.towerBasic.towerSprite.y = mouseObject.y
-    // }
+    hide(){
+        this.titleShop.hide()
+        this.capivaraBaseButton.hide()
+        this.capivaraAvancadaButton.hide()
+        this.closeButton.hide()
+    }
 
     display(){
         this.handleMousePressed()

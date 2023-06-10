@@ -25,9 +25,6 @@ class TowerBasic {
     }
 
     verificyStateTower(){
-        if (this.towerState === "Não Colocado"){
-            this.towerSprite =  null
-        }
         if (this.towerState === "Colocando"){
             this.towerSprite = createSprite(mouseObject.x,mouseObject.y,40,40)
             
@@ -108,6 +105,5 @@ class TowerBasic {
         this.nvState();
         this.rangeState();
         this.verificyStateTower()
-        
     }
 }
