@@ -26,6 +26,7 @@ class HomeScreen {
             soundClicked.play()
             this.hide();
             this.shopPage = new ShopScreen()
+            settingCanOpen = true
         })
 
         this.settingsButton.mousePressed(() => {

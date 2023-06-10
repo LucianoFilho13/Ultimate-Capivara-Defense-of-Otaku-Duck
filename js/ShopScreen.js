@@ -5,11 +5,14 @@ class ShopScreen {
 
         this.towerBasic = null
         this.selectTower =  null
+        this.openShopScreen = null
+        this.game = null
 
         this.capivaraBaseButton = createButton("Capivara Básica")
         this.capivaraAvancadaButton = createButton("Capivara Avancada")
 
         this.closeButton = createButton("Fechar")
+        
         //this.settingsButton = createButton("Configurações")
         //this.soundButton = soundClicked
         
@@ -27,7 +30,9 @@ class ShopScreen {
         })
         this.closeButton.mousePressed(() => {
             this.hide()
+            this.game = new Game()
         })
+        
     }
 
     buyTower(){
@@ -63,6 +68,7 @@ class ShopScreen {
         this.capivaraAvancadaButton.hide()
         this.closeButton.hide()
     }
+    
 
     display(){
         this.handleMousePressed()

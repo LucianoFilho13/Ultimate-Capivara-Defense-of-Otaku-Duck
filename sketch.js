@@ -3,7 +3,7 @@
 // Variaveis
 var inventory, moneyGame;
 var soundClicked, soundClick;
-var musicState, effectSoundsState;
+var musicState, effectSoundsState, settingIsOpen, settingCanOpen;
 var mouseObject;
 var varTowerState;
 
@@ -23,6 +23,8 @@ function setup(){ // Setar valores iniciais
   inventory = []
   musicState = true
   effectSoundsState = true
+  settingIsOpen = false
+  settingCanOpen = false
   //soundClick.addSound(soundClicked)
 
 }
@@ -38,7 +40,8 @@ function draw(){ // Aparecer as informações na tela
   // this.towerBasic.display()
 
   //towerBasic.rangeState()
-
+  // console.log("Sistema aberto:" + settingIsOpen)
+  // console.log("Sistema pode ser aberto:" + settingCanOpen)
 
   allFunction(); //Função de todas as funções
   drawSprites(); //Responsavel em renderizar o jogo(sprites)
@@ -48,8 +51,9 @@ function draw(){ // Aparecer as informações na tela
 function allFunction(){
   //Insira as funções aqui
   function keyTyped(){
-    if (keyCode === 27){
+    if (keyCode === 27 && settingIsOpen === false && settingCanOpen === true){
       this.settingsScreen = new Settings()
+      settingIsOpen = true
     }
     
   }

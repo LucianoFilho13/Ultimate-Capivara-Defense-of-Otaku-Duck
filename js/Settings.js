@@ -20,6 +20,7 @@ class Settings{
 
         this.homeScreenPage = null
         this.creditsScreenPage = null
+        settingIsOpen = true
         
         this.handleMousePressed();
     }
@@ -38,12 +39,14 @@ class Settings{
             soundClicked.play()
             this.hide();
             this.homeScreenPage = new HomeScreen()
+            settingIsOpen = false
         })
 
         this.creditsDisplayButton.mousePressed(() => {
             soundClicked.play()
             this.hide();
             this.creditsScreenPage = new CreditsScreen()
+            settingIsOpen = false
         })
 
         this.musicDisplayButton.mousePressed(() => {
