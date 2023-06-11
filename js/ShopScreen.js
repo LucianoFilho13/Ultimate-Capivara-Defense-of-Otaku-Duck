@@ -12,6 +12,8 @@ class ShopScreen {
         this.capivaraAvancadaButton = createButton("Capivara Avancada")
 
         this.closeButton = createButton("Fechar")
+
+        screenState = "Shop"
         
         //this.settingsButton = createButton("Configurações")
         //this.soundButton = soundClicked

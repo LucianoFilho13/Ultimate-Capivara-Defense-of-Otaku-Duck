@@ -8,9 +8,17 @@ class CreditsScreen{
         this.credits = createElement('h4')
         this.credits.html("y0kata")
 
+        this.linkGitHub = createA('https://github.com/LucianoFilho13','GitHub')
+        this.linkGitHub.html('GitHub')
+
         this.backCreditsScreenButton = createButton("Voltar")
         this.settingsScreen = null
         this.handleMousePressed()
+
+        screenState = "Credits"
+
+        this.setElementsPosition()
+        this.setElementsStyle()
     }
 
     handleMousePressed(){
@@ -20,10 +28,19 @@ class CreditsScreen{
         })
     }
 
+    setElementsPosition(){
+
+    }
+
+    setElementsStyle(){
+        this.linkGitHub.class("linkGitHub")
+    }
+
     hide(){
         this.titleCreditsScreen.hide();
         this.creditsGame.hide();
         this.credits.hide();
         this.backCreditsScreenButton.hide();
+        this.linkGitHub.hide();
     }
 }

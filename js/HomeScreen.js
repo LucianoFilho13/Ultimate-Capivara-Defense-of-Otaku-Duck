@@ -9,6 +9,8 @@ class HomeScreen {
         this.playButton = createButton("Jogar")
         this.settingsButton = createButton("Configurações")
         this.soundButton = soundClicked
+
+        screenState = "Home"
         
         this.handleMousePressed();
     }
@@ -27,12 +29,14 @@ class HomeScreen {
             this.hide();
             this.shopPage = new ShopScreen()
             settingCanOpen = true
+            
         })
 
         this.settingsButton.mousePressed(() => {
             soundClicked.play()
             this.hide();
             this.settingsPage = new Settings()
+            
         })
     }
 

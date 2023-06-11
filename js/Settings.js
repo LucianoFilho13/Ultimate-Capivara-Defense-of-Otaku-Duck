@@ -11,7 +11,7 @@ class Settings{
         this.effectSoundDisplayText.html("Volume do efeito sonoro")
         this.effectSoundVolumeSliderButton = createSlider(0, 1, 0.5, 0.1)
 
-        this.effectSoundsDisplayButton = createCheckbox("Efeitos Sonoros", true)
+        this.effectSoundsDisplayButton = createCheckbox("Efeitos sonoros", true)
         this.musicDisplayButton = createCheckbox('Música', true)
 
         this.creditsDisplayButton = createButton("Créditos")
@@ -21,6 +21,11 @@ class Settings{
         this.homeScreenPage = null
         this.creditsScreenPage = null
         settingIsOpen = true
+
+        screenState = "Settings"
+
+        this.version = createElement('h6')
+        this.version.html("Versão Alpha 0.0.1")
         
         this.handleMousePressed();
     }
@@ -78,6 +83,8 @@ class Settings{
         this.soundVolumeSliderButton.hide();
         this.effectSoundDisplayText.hide();
         this.effectSoundVolumeSliderButton.hide();
+
+        this.version.hide();
     }
 
     display(){
