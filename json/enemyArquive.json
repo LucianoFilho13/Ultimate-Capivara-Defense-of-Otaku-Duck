@@ -1,0 +1,10 @@
+{"enemys": [
+        {"patin_ninja": {
+            "name": "Patin-Ninja",
+            "life": 5,
+            "speed": 2,
+            "powerups": null
+            }
+        }
+    ]
+}

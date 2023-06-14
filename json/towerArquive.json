@@ -1,0 +1,26 @@
+{"towers": [
+        {"capivara_basica": {
+            "name": "Capivara Básica",
+            "type": "ground",
+            "range": 5,
+            "damage": 1,
+            "price": 100,
+            "cooldown": 3,
+            "nvMax": 4
+            }
+            
+        },
+
+        {"capivara_avancada": {
+            "name": "Capivara Avançada",
+            "type": "ground",
+            "range": 7,
+            "damage": 3,
+            "price": 150,
+            "cooldown": 4,
+            "nvMax": 3
+            }
+        }
+    ]
+
+}
