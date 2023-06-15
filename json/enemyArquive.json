@@ -3,7 +3,62 @@
             "name": "Patin-Ninja",
             "life": 5,
             "speed": 2,
-            "powerups": null
+            "powerups": null,
+            "type": "ground"
+            }
+        },
+
+        {"pato_de_borracha": {
+            "name": "Pato de Borracha",
+            "life": 7,
+            "speed": 3,
+            "powerups": null,
+            "type": "ground"
+            }
+        },
+
+        {"patin_espadachin": {
+            "name": "Patin-Espadachin",
+            "life": 20,
+            "speed": 6,
+            "powerups": null,
+            "type": "ground"
+            }
+        },
+
+        {"patin_smash": {
+            "name": "Patin-Smash",
+            "life": 6,
+            "speed": 2,
+            "powerups": null,
+            "type": "ground"
+            }
+        },
+
+        {"patin_superior": {
+            "name": "Patin-Superior",
+            "life": 50,
+            "speed": 20,
+            "powerups": null,
+            "type": "ground"
+            }
+        },
+
+        {"patin_apelao": {
+            "name": "Patin-Apelão",
+            "life": 40,
+            "speed": 12,
+            "powerups": "shield",
+            "type": "ground"
+            }
+        },
+
+        {"pato_marcha_5": {
+            "name": "Pato-Marcha 5",
+            "life": 70,
+            "speed": 18,
+            "powerups": "regeneration_1",
+            "type": "ground"
             }
         }
     ]
